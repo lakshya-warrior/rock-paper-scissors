@@ -1,3 +1,5 @@
+# Lakshya Gupta - Housie Board
+
 from tkinter import *
 import math
 import random
