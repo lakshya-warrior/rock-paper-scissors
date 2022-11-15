@@ -19,7 +19,6 @@ all_num = (random.sample((range(0, 90)), 90))
 def callback(event):
     gen()
 
-
 def gen():
     curr_num = all_num[0] + 1
 
@@ -31,7 +30,8 @@ def gen():
     btn[all_num[0]]["bg"] = "#C0C0C0"
     btn[all_num[0]]["fg"] = "#CC5500"
 
-    engine = pyttsx3.init()
+    engine = pyttsx3.init()\
+    ''' For voice'''
     # voices = engine.getProperty('voices')
     # engine.setProperty('voice', voices[0].id)
     engine.setProperty('rate', 140)
