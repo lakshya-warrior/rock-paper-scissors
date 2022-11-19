@@ -19,8 +19,8 @@ def show_image(button_press, reset):
     image_label[5].place_forget()
     image_label[4].place_forget()
 
-    x_comp = screen_width/2 - 520
-    x_user = screen_width/2 + 200
+    x_comp = screen_width / 2 - 520
+    x_user = screen_width / 2 + 200
 
     if reset == "reset":
         success = []
@@ -82,13 +82,13 @@ def draw_screen(window, w_width, w_height):
     t1.pack()
 
     you_label = Label(window, text='You', font=('Times New Roman', 45), fg='#FFFDD0', background="#ADD8E6")
-    you_label.place(x=w_width/2+270,y=110)
+    you_label.place(x=w_width / 2 + 270, y=110)
 
     line_label = Label(window, relief="solid", borderwidth=10, height=29)
     line_label.pack(pady=30)
 
     comp_label = Label(window, text='Computer', font=('Times New Roman', 45), fg='#FFFDD0', background="#ADD8E6")
-    comp_label.place(x=w_width/2 - 500,y=110)
+    comp_label.place(x=w_width / 2 - 500, y=110)
 
     x_btn = w_width / 2 - 83
 
@@ -126,10 +126,13 @@ score_label = []
 
 image_list = [s_image, p_image, r_image, s_image, p_image, r_image]
 score_text_list = ["TIE!", "You LOST!", "You WON!"]
+# Images
 for i in range(0, 6):
     image_label.append(Label(screen, image=image_list[i], relief="flat", bg="#ADD8E6"))
+
+# Comments
 for i in range(0, 3):
-    score_label.append(Label(screen, text=score_text_list[i], font=('Times New Roman', 25), fg='green',
+    score_label.append(Label(screen, text=score_text_list[i], font=('Times New Roman', 30), fg='green',
                              background="#ADD8E6"))
 
 screen.mainloop()
