@@ -127,7 +127,7 @@ score_label = []
 image_list = [s_image, p_image, r_image, s_image, p_image, r_image]
 score_text_list = ["TIE!", "You LOST!", "You WON!"]
 for i in range(0, 6):
-    image_label.append(Label(screen, image=image_list[i], relief="ridge"))
+    image_label.append(Label(screen, image=image_list[i], relief="flat", bg="#ADD8E6"))
 for i in range(0, 3):
     score_label.append(Label(screen, text=score_text_list[i], font=('Times New Roman', 25), fg='green',
                              background="#ADD8E6"))
